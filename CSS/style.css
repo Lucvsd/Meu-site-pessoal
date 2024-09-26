@@ -12,13 +12,21 @@ body {
     color: #333;
 }
 
-/* Estilo para a barra de navegação */
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+}
+
 nav ul {
     list-style: none;
-    background-color: #333;
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    margin: 0; /* Remove margin para melhor alinhamento */
+}
+
+nav ul li {
+    flex: 1; /* Distribui uniformemente os itens */
 }
 
 nav ul li a {
@@ -27,8 +35,10 @@ nav ul li a {
     padding: 10px 15px;
     display: block;
     font-weight: bold;
+    text-align: center; /* Centraliza o texto dos links */
     transition: background-color 0.3s ease;
 }
+
 
 nav ul li a:hover {
     background-color: #555;
