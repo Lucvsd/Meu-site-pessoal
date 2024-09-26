@@ -1,0 +1,82 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Mantive a fonte desejada */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0; /* Remove margin para melhor alinhamento */
+}
+
+nav ul li {
+    flex: 1; /* Distribui uniformemente os itens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    text-align: center; /* Centraliza o texto dos links */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Contact page styles */
+.contact-info {
+    margin-bottom: 30px;
+    text-align: left; /* Alinhamento padrão para desktop */
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease; /* Transição suave na cor do link */
+}
+
+.contact-info a:hover {
+    color: #0056b3; /* Muda a cor do link ao passar o mouse */
+}
+
+/* Personalization */
+body {
+    background-color: #f0f0f0; /* Mantido, mas pode ser ajustado */
+}
+
+/* Layout responsiveness */
+@media (max-width: 768px) {
+    .contact-info {
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda a direção da lista para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens da navegação */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adiciona espaço entre os itens */
+    }
+}

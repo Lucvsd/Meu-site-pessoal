@@ -1,0 +1,129 @@
+/* Reset básico para remover margens e paddings padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo para a barra de navegação */
+nav ul {
+    list-style: none;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilo do header */
+.meio-header {
+    background-color: #007bff;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meio-header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Estilo para o conteúdo principal */
+main.retangulo {
+    background-color: white;
+    padding: 20px;
+
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos das colunas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-12 {
+    padding: 15px;
+    width: 100%;
+}
+
+.col-md-4, .col-md-8 {
+    padding: 15px;
+}
+
+.col-md-4 {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        width: 33.3333%;
+    }
+
+    .col-md-8 {
+        width: 66.6667%;
+    }
+}
+
+.col-md-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo do rodapé */
+footer.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer.rodape a {
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer.rodape a:hover {
+    color: #00aced;
+}
+
+/* Link externo no rodapé */
+footer.rodape a i {
+    font-size: 1.5rem;
+}
